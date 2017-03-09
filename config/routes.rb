@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   root to: 'welcomes#index'
-
-resources :welcomes, only: [:index, :new, :create, :show, :edit, :update, :destroy]
-
+  resources :welcomes, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
